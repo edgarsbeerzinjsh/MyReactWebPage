@@ -1,9 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { Button } from './Button';
-import { Article } from '../types/article';
+import React, { useState } from 'react'
 import '../styles/components/article-form.scss';
-import axios from 'axios';
-import { CATEGORY_LIST } from '../constants/category-list';
 
 type ValidationInputProps = {
     type: string;
@@ -29,7 +25,7 @@ export const ValidationInput = ({type, name, children, error, onInputChange}: Va
             onInputChange(newValue);
           }}
         />
-        {error && <div>{error}</div>}
+        {error && <div className="errorText">{error}</div>}
     </label>
   )
 }

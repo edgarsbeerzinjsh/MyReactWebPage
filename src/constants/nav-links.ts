@@ -4,10 +4,6 @@ export const NAV_LINKS = [
         path: '/',
     },
     {
-        title: 'About',
-        path: '/about',
-    },
-    {
         title: 'Todos',
         path: '/todos',
     },
@@ -18,5 +14,9 @@ export const NAV_LINKS = [
     {
         title: 'Login',
         path: '/login',
-    }
+    },
+    {
+        title: 'About',
+        path: '/about',
+    },
 ];

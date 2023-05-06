@@ -4,11 +4,12 @@
 .validation-form {
   display: flex;
   flex-direction: column;
+  max-width: steps(120);
 
   border: 2px solid $color-primary;
   border-radius: steps(4);
   padding: steps(8);
-  margin: steps(6);
+  margin: steps(6) auto;
   row-gap: steps(4);
 
   label {
@@ -17,10 +18,10 @@
 
   }
 
-  input, textarea, select{
+  input{
     display: flex;
     width: 95%;
-    margin: auto;
+    margin: steps(3) auto 0 auto;
     padding: 0.4rem;
     border-radius: steps(2);
     border: 1px solid $color-secondary;
@@ -36,6 +37,12 @@
     &::placeholder {
       color: #999;
     }
+  }
+  
+  .errorText {
+    display: inline-block;
+    text-decoration: none !important;
+    @include input-field-error-text()
   }
 }
 

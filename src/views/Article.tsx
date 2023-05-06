@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { Article as ArticleType } from "../types/article";
 import axios from "axios";
 import { delay } from "../helpers/delay";
