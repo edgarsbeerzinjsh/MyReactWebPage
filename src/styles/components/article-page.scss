@@ -1,0 +1,41 @@
+@import "../defaults.scss";
+
+.article-page {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid $color-primary;
+    border-radius: steps(4);
+    margin: steps(6);
+
+    div {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin: steps(5);
+        gap: steps(3);
+    }
+
+    img {
+        display: flex;
+        border-radius: steps(4);
+        object-fit: contain;
+
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    .article-description {
+        font-size: 1.5rem;
+    }
+    
+    .article-category {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 100%;
+    
+    }
+}
