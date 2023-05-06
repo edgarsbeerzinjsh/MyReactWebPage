@@ -151,3 +151,38 @@ export function TodoList() {
     </div>
   );
 }
+
+
+{/* <form
+className="form"
+onSubmit={(event) => {
+  event.preventDefault();
+  const newTodo: Todo = {
+    title: inputValue,
+    id: Math.random().toString(),
+    isDone: false,
+  };
+  setTodos([...todos, newTodo]);
+  setInputValue("");
+}}
+>
+  <label htmlFor="todo-title">
+  Add todo
+    <div>
+      <input
+        ref={inputTodo}
+        id="todo-title"
+        type="text"
+        value={inputValue}
+        placeholder="Nopirkt pārtiku..."
+        onChange={(event) => {
+          const newValue = event.target.value;
+          setInputValue(newValue);
+        }}
+        />
+
+      <Button type="submit">Add todo</Button>
+    </div>
+    {formTodo.inputTodo.error && <p>{formTodo.inputTodo.error}</p>}
+  </label>
+</form> */}
