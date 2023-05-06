@@ -1,0 +1,69 @@
+@import "../defaults.scss";
+
+
+.item {
+  border: 1px solid $color-black;
+  border-radius: steps(1);
+  padding: steps(1) steps(2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 steps(2) steps(2) steps(2);
+  font-family: $text-fontFamily;
+  font-size: remSteps(1);
+  font-weight: 300;
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    input {
+      width: 100%;
+      border-radius: steps(2);
+      border: 1px solid $color-secondary;
+      font-size: 14px;
+      margin-right: steps(2);
+      
+      &:focus {
+        outline: none;
+        border-color: $color-activeNavigationText;
+        box-shadow: 0 0 0 0.2rem $color-activeNavigation;
+      }
+      
+      &::placeholder {
+        color: #999;
+      }
+    }
+  }
+
+}
+
+.item-content {
+  display: flex;
+
+  label {
+    background-color: $color-primary;
+    color: $color-black;
+    transition: 0.5s all ease-in-out;
+    &:hover {
+      opacity: 50%;
+      background-color: $color-activeNavigation;
+    }
+    width: steps(22);
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: steps(2);
+    justify-content: center;
+    align-items: center;
+
+  }
+
+}
+
+.task-done {
+  background-color: white;
+  transition: 0.5s all ease-in-out;
+  opacity: 50%;
+  background-color: $color-activeNavigation;
+}

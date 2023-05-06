@@ -1,0 +1,42 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "ssds",
+      "description": "asdasd",
+      "category": "Category 1",
+      "image": "https://fastly.picsum.photos/id/1070/600/800.jpg?hmac=boIaAKkoix_wA8VfdlotOUXbF4mC4Llv3EFNxFrMt6o"
+    },
+    {
+      "title": "2",
+      "description": "",
+      "category": "Category 3",
+      "image": "https://fastly.picsum.photos/id/407/600/800.jpg?hmac=FY5ub9Vpvlr0r2I1vnnpTxVDdxnAwSq_eksSeBJFWx8",
+      "id": 2
+    },
+    {
+      "title": "444",
+      "description": "",
+      "category": "Category 4",
+      "image": "https://fastly.picsum.photos/id/1044/600/800.jpg?hmac=58xIkze9zKRUMfS-esEKIp1N8k9qwOSZft8symw39z4",
+      "id": 3
+    },
+    {
+      "title": "fdgdfg",
+      "description": "dfgdfgd",
+      "category": "Category 4",
+      "image": "https://fastly.picsum.photos/id/216/600/800.jpg?hmac=XzIbVnYXNLoUef70jJp-2lk2GQ-ZNzqJ0LRIT1amUgw",
+      "id": 4
+    },
+    {
+      "title": "sdfasdf",
+      "description": "asdads",
+      "category": "Category 3",
+      "image": "https://fastly.picsum.photos/id/634/600/800.jpg?hmac=fatIBddnDvz37kbDVuV9gBHwl7pHJPNJ6Gas3TcfXQE",
+      "id": 5
+    }
+  ],
+  "todos": [
+    {}
+  ]
+}

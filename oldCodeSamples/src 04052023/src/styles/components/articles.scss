@@ -1,0 +1,109 @@
+@import "../defaults.scss";
+
+.articles-list {
+    display:grid;
+    gap: steps(2);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+}
+
+.article-card {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-rows: repeat(7, auto);
+    margin: steps(3);
+    padding: steps(3);
+    border: 2px solid $color-secondary;
+    border-radius: steps(2);
+
+    a {
+        font-family: $text-fontFamily;
+        border: 1px solid #ccc;
+        text-decoration: none;
+        text-align: center;
+        grid-column: 1/3;
+        grid-row: 7;
+        margin: 0.1rem;
+        padding: 0.4rem;
+        border-radius: steps(2);
+        font-size: 1rem;
+        background-color: $color-primary;
+        color: $color-black;
+        transition: 0.5s all ease-in-out;
+        &:hover {
+          opacity: 50%;
+          background-color: $color-activeNavigation;
+        }
+    }
+    
+}
+
+.article-card-intro {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1/7;
+    text-align: center;
+
+    img {
+        object-fit: scale-down;
+        width: 60%;
+        grid-column: 1;
+        grid-row: 1/6;
+        border-radius: steps(2);
+        margin: auto;
+    }
+
+    h3 {
+        grid-column: 1;
+        grid-row: 6;
+        text-align: center;
+        padding: steps(2);
+    }
+}
+
+.article-card-buttons {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2/6;
+
+}
+
+#add-new-article-button {
+        margin: steps(4);
+        border: 2px solid red;
+}
+
+.category-filter {
+    p {
+        font-size: 1.4rem;
+        grid-row: 1;
+        grid-column: 1 auto;
+        margin-left: steps(2);
+        margin-bottom: steps(3);
+    }
+
+    div {
+        display:flex;
+        margin: auto auto;
+    }
+}
+
+.radio-category {
+    flex-direction: column;
+    width: 15%;
+    align-items: center;
+    font-family: $text-fontFamily;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.4rem;
+    border-radius: steps(2);
+    font-size: 1rem;
+    background-color: $color-primary;
+    color: $color-black;
+    transition: 0.5s all ease-in-out;
+    &:hover {
+      opacity: 50%;
+      background-color: $color-activeNavigation;
+    }
+}
