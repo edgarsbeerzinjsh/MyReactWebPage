@@ -38,14 +38,11 @@ export function TodoList() {
   });
 
   const isUniqueTitle = (value: string, todos: Todo[]) => {
-    let titles: string[] = [];
-    todos.forEach((todo) => {
-      if (!titles.includes(todo.title)) {
-        titles.push(todo.title);      
-      }
+    return todos.some((todo) => {
+      return todo.title === value;
     });
-    return titles.includes(value);
   }
+
 
   return (
     <div className="container">
